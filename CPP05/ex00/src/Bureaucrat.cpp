@@ -6,7 +6,7 @@
 /*   By: seilkiv <seilkiv@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 11:24:05 by seilkiv           #+#    #+#             */
-/*   Updated: 2026/10/15 11:53:54 by seilkiv          ###   ########.fr       */
+/*   Updated: 2026/10/15 14:10:24 by seilkiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,6 @@ const char *Bureaucrat::GradeTooLowException::what() const throw()
 
 std::ostream &operator<<(std::ostream &os, const Bureaucrat &bureaucrat)
 {
-    os << "Name: " << bureaucrat.getName() << "  |  Grade: " <<  bureaucrat.getGrade();
+    os << bureaucrat.getName() << ", bureaucrat grade " << bureaucrat.getGrade();
     return os;
 }
